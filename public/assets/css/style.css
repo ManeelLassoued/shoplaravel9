@@ -1,0 +1,238 @@
+body {
+    background-color: #f8f9fa; /* Light gray background */
+    margin: 0;
+    padding: 0;
+  }
+  .custom-col {
+    padding: 0.40rem; /* Adjust padding as needed */
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+    /* Zoom effect for the product image */
+    .zoom-container {
+      position: relative;
+      overflow: hidden;
+  }
+
+  .zoom-image {
+      transition: transform 0.5s ease;
+      width: 100%;
+      height: auto;
+  }
+
+  .zoom-container:hover .zoom-image {
+      transform: scale(1.2); /* Adjust scale as needed */
+  }
+
+  /* Optional: Adding a lens effect */
+  .zoom-lens {
+      position: absolute;
+      border: 1px solid #000;
+      opacity: 0.5;
+      pointer-events: none; /* Prevent mouse events */
+      display: none;
+  }
+   
+
+
+  .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Darken navigation buttons */
+    border-radius: 50%; /* Round navigation buttons */
+}
+/* Adjust the carousel height */
+#newProductsCarousel {
+    height: 350px; /* Set a fixed height for the carousel */
+}
+
+
+.order-summary-card {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #dee2e6; /* Bootstrap border color */
+    border-radius: 0.375rem; /* Bootstrap border radius */
+    padding: 15px; /* Padding inside the card */
+}
+
+.order-summary-card {
+    width: 100%; /* Increase the width to 120% or adjust as needed */
+    transform: translateX(3%); /* Center the card by shifting it left */
+}
+.order {
+    margin-left: 20px; /* Adjust the value to move the element further to the right */
+}
+
+.custom-left {
+    margin-left: 50%; /* Ensures the button is aligned to the left */
+}
+
+   /* Custom styles for the cart dropdown */
+   .cart-dropdown {
+    display: none;
+    position: absolute;
+    top: 60px; /* Adjusted for position */
+    right: 10px; /* Adjusted to be a little left */
+    background-color: white;
+    border: 1px solid #ddd;
+    width: 270px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  .cart-items {
+    max-height: 250px; /* Set a max height */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  .cart-item {
+    display: flex;
+    padding: 5px; /* Reduced padding for smaller items */
+    border-bottom: 2px solid #eee;
+   }
+  .cart-item img {
+    width: 70px; /* Adjusted width for smaller images */
+    height: 70px; /* Adjusted height for smaller images */
+    margin-right: 10px;
+
+  }
+  .cart-item-price {
+    font-weight: bold;
+    color: rgb(101, 122, 236);
+    font-size: 14px; 
+    margin: 0;
+    margin-left: 10px;
+
+  }
+  .price-quantity {
+  display: flex; /* Use flex to align price and quantity side by side */
+  justify-content: space-between; /* Space them evenly */
+  align-items: center; /* Center them vertically */
+  margin-top: 2px; /* Add some space above */
+}
+
+  .cart-item-quantity{
+      font-size: 13px; 
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      margin: 0;
+      margin-left: 1px;
+
+  }
+  .cart-title {
+    font-size: 17px; 
+  }
+  .cart-footer {
+    padding: 10px;
+    border-top: 1px solid #eee;
+    text-align: center; /* Centering total and buttons */
+  }
+  .cart-footer a {
+    margin: 5px; /* Spacing between buttons */
+  }
+
+
+/* Custom styles for the shopping cart */
+.table {
+    border-collapse: separate;
+    border-spacing: 0 15px; /* Adds space between rows */
+}
+.table th, .table td {
+    background: #fff;
+    border: none; /* Removes default borders */
+    border-radius: 0.4rem; /* Rounded corners */
+    padding: 10px; /* Increased padding */
+}
+.table th {
+    background: #f8f9fa; /* Light grey background for header */
+}
+.table tbody tr {
+    transition: background-color 0.2s; /* Smooth hover transition */
+}
+.table tbody tr:hover {
+    background-color: #f1f1f1; /* Light background on hover */
+}
+.remove-btn {
+    color: #dc3545; /* Bootstrap danger color */
+    transition: color 0.2s; /* Smooth transition */
+}
+.remove-btn:hover {
+    color: #c82333; /* Darker red on hover */
+}
+
+.above-card
+{ margin-left: 5px;}
+.user-log
+{ height: 30px;
+  width:30px ;
+}
+.check-btn
+{ 
+    display: block; /* Make it a block element */
+    margin-top :-42px;
+ }
+
+
+ .custom-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.card-header-user {
+    background-color: #007bff;
+    color: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.form-label {
+    font-weight: 600;
+}
+.btn-custom {
+    background-color: #1612fc;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+.btn-custom:hover {
+    background-color: #218838;
+}
+.profile-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+    margin-bottom: 15px;
+}
+
+   /* Footer styling */
+   footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+    margin-top: auto; /* This ensures footer is pushed to the bottom of the page */
+}
+
+footer .container {
+    padding: 0 15px;
+}
+
+footer .row {
+    justify-content: center;
+}
+
+/* Ensures that links are white and has hover effects */
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #f1f1f1;
+}
